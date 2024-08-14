@@ -1,0 +1,26 @@
+# Perguntas
+def main():
+    print("Hello gamer!!!")
+    answer = input("Ready for a game? ")
+    start(answer)
+
+# Número mistério
+import random
+number = random.randint(1,10)
+
+# Opções de resposta
+def start(result):
+    if result == "yes":
+        print("Let the games begin!!")
+    if result == "no":
+        print("Oh, :( if so......DIEEEE >:(")
+    yes_answer(result)
+
+def yes_answer(guess):
+    guess = input("Wich number am I thinking? ")
+    if guess == number:
+        print("Correct!!")
+    else:
+        print("Die" + "💀")
+        print("The number was " + str(number))
+          echo test, and deploy your project.
